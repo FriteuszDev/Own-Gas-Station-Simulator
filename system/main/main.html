@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Own Gas Station Simulator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="../images/logo/logo_BES.png">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="banknot"></div>
+<div class="clock-container">
+        <i class="fas fa-clock"></i>
+        <div id="time">00:00</div>
+</div>
+<div class="OpCl"><p class="OpCl_p">Zamknięte</p></div>
+<div class="logo">
+    <img src="../images/logo/logo_BES.png" alt="">
+</div>
+<div class="station_logo">
+    <p class="station_name_logo">Twoja Stacja</p>
+    <img class="station_logo_img" src="../images/assets/nologo.png" alt="BrakLogo">
+</div>
+<div class="level">
+    <p>REPUTACJA STACJI:</p>
+    <div class="divever_level"></div>
+    <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+    <p class="p2">0<span class="span2"><i class="fa-solid fa-dollar-sign"></i></span></p>
+</div>
+    <div class="panel">
+        <div class="produkty">
+            <p>Asortyment</p>
+            <div class="divever"></div>
+            <span>Sprawdzaj braki, kupuj, zmieniaj ceny i uzupełniaj zapasy produktów na półkach.</span>
+            <img src="../images/assets/produkty.png" alt="">
+        </div>
+
+
+        <div class="paliwo">
+            <p>Paliwo</p>
+            <div class="divever"></div>
+            <span>Sprawdzaj braki, kupuj, zmieniaj ceny i uzupełniaj zapasy paliw na stacji.</span>
+            <img src="../images/assets/paliwo.png" alt="">
+        </div>
+        <div class="pracownicy">
+            <p>Pracownicy</p>
+            <div class="divever"></div>
+            <span>Zatrudniaj, zwalniaj i zarządzaj pracownikami.</span>
+            <img src="../images/assets/pracownicy.png" alt="">
+        </div>
+    </div>
+
+    <div class="settings_btn"><i class="fa-solid fa-gear"></i></div>
+    <div class="edit_btn"><i class="fa-solid fa-pen"></i></div>
+
+<div class="antyclick_editpanel"></div>
+<div class="edit_panel">
+    <p>Dostosuj Swoją Stację:</p>
+    <div class="save_edit"><i class="fa-solid fa-floppy-disk"></i></div>
+    <div class="close_edit"><i class="fa-solid fa-xmark"></i></div>
+    <div class="alert">Nazwa musi składac się z minimum 4 znaków i maksymalnie z 10 znaków</div>
+    <span class="nazwa_edit">Nazwa: <input type="text" class="input_nazwa_edit"></span>
+    <span class="logo_edit">
+        Logo:
+        <div class="logo_picker" onclick="toggleLogoSelector()">
+            <div id="logo_selector" class="logo_selector_hidden">
+<div class="logo_grid">
+    <img src="../images/assets/stationlogo1.png" alt="1" onclick="selectLogo(this)">
+    <img src="../images/assets/stationlogo2.png" alt="2" onclick="selectLogo(this)">
+    <img src="../images/assets/stationlogo3.png" alt="3" onclick="selectLogo(this)">
+    <img src="../images/assets/stationlogo4.png" alt="4" onclick="selectLogo(this)">
+    <img src="../images/assets/stationlogo5.png" alt="5" onclick="selectLogo(this)">
+</div>
+            </div>
+        </div>
+    </span>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
